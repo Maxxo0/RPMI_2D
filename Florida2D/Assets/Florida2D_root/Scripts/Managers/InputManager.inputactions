@@ -2,22 +2,22 @@
     "name": "InputManager",
     "maps": [
         {
-            "name": "Keyboard",
-            "id": "33f54d22-e908-41da-92a0-cbdbad1c1a72",
+            "name": "Gameplay",
+            "id": "edb45ab0-5232-49af-ad1a-65c3dc0e9f87",
             "actions": [
                 {
                     "name": "Move",
                     "type": "Value",
-                    "id": "9746e149-4986-4c13-a4f0-73ad09e99a57",
+                    "id": "ae1273f8-86c0-4266-b877-35b9e6f77f16",
                     "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
                 },
                 {
-                    "name": "Attack",
+                    "name": "CMoon",
                     "type": "Button",
-                    "id": "6db362ef-56f6-4830-bb59-3bb71db61a94",
+                    "id": "165fd88e-60c9-4fac-b4fc-68220746cbf0",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -27,7 +27,7 @@
             "bindings": [
                 {
                     "name": "Keyboard",
-                    "id": "c9a20087-32bc-4ef5-bf51-770142debfbb",
+                    "id": "fab93893-8361-4758-8f1f-e2df1d560c86",
                     "path": "2DVector",
                     "interactions": "",
                     "processors": "",
@@ -37,57 +37,57 @@
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "up",
-                    "id": "5eeefacb-f043-4ba3-8946-cf89b202a9e8",
-                    "path": "<Keyboard>/space",
+                    "name": "left",
+                    "id": "7e611095-a79b-4b11-8d8d-b0b6df8df75e",
+                    "path": "<Keyboard>/a",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Gameplay",
-                    "action": "Move",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "down",
-                    "id": "60a56598-d00a-4d36-aacb-a31f869ff4da",
-                    "path": "<Keyboard>/shift",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Gameplay",
+                    "groups": "",
                     "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
                 {
                     "name": "left",
-                    "id": "a347eb50-502c-4a80-b771-3830f7c931ca",
-                    "path": "<Keyboard>/a",
+                    "id": "52291f1d-2dd6-49b8-8eec-8a6c444e701e",
+                    "path": "<Keyboard>/leftArrow",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Gameplay",
+                    "groups": "",
                     "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
                 {
                     "name": "right",
-                    "id": "4fba363e-df7e-48e8-9383-d308e02c1976",
+                    "id": "aa2b775f-5845-49ce-8190-5fe75a52abe3",
                     "path": "<Keyboard>/d",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Gameplay",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Right",
+                    "id": "58eae3d7-de0d-415a-9c36-6ed92b175caf",
+                    "path": "<Keyboard>/rightArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
                     "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
                 {
                     "name": "",
-                    "id": "2a3e792a-868e-40e9-962a-1bb2ffa02c5f",
-                    "path": "",
+                    "id": "7e9c9de8-f505-4832-b35d-90be50eef69c",
+                    "path": "<Keyboard>/e",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Gameplay",
-                    "action": "Attack",
+                    "groups": "",
+                    "action": "CMoon",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
@@ -98,7 +98,13 @@
         {
             "name": "Gameplay",
             "bindingGroup": "Gameplay",
-            "devices": []
+            "devices": [
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
         }
     ]
 }
