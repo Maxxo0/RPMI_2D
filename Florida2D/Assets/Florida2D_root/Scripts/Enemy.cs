@@ -7,6 +7,7 @@ public class Enemy : MonoBehaviour
 
     [Header("Enemy Stats")]
     public int damage;
+    
 
 
     // Start is called before the first frame update
@@ -41,6 +42,9 @@ public class Enemy : MonoBehaviour
             HealthSystem hpSystem = collision.gameObject.GetComponent<HealthSystem>();
             hpSystem.TakeDamage(damage);
         }
+        
     }
+
+    
 
 }

@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour
 
     [Header("Move Stats")]
     public float speed;
+    public float jumpForce;
 
 
 
@@ -48,12 +49,28 @@ public class PlayerController : MonoBehaviour
     }
 
 
+
+
+    public void Jump(InputAction.CallbackContext context)
+    {
+
+        
+        if (rb.gravityScale > 0) { rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse); }
+        if (rb.gravityScale < 0) { rb.AddForce(Vector2.down * jumpForce, ForceMode2D.Impulse); }
+
+    }
+
+
+
+
     public void CMoon(InputAction.CallbackContext context)
     {
         rb.gravityScale = -1;
+       
         playerSprite.flipY = true;
     }
 
+    
 
 
 }
