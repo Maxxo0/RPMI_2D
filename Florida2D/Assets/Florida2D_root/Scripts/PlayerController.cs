@@ -43,8 +43,8 @@ public class PlayerController : MonoBehaviour
     {
         rb.velocity = new Vector3(moveInput.x * speed, rb.velocity.y, 0);
 
-        if (moveInput.x > 0) { playerSprite.flipX = false; }
-        else if (moveInput.x < 0) { playerSprite.flipX= true; }
+        if (moveInput.x > 0) { transform.rotation = Quaternion.Euler(0, 0, 0); }
+        else if (moveInput.x < 0) { transform.rotation = Quaternion.Euler(0, 180, 0); }
     }
 
 
@@ -53,6 +53,7 @@ public class PlayerController : MonoBehaviour
         rb.gravityScale = -1;
         playerSprite.flipY = true;
     }
+
 
 
 }
