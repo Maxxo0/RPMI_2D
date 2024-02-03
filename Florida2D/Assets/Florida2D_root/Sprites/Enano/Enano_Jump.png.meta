@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4a17610e3828c804e8abca815ea0b39d
+guid: b5cfe13f9e25aca4f96f025857000008
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,190 +110,106 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Enano_Attack_0
+      name: Enano_Jump_0
       rect:
         serializedVersion: 2
-        x: 20
-        y: 21
-        width: 42
-        height: 60
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e850ea2d0376d6d43909540a811774d4
-      internalID: 634418337
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enano_Attack_1
-      rect:
-        serializedVersion: 2
-        x: 122
-        y: 21
-        width: 42
-        height: 61
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fe6af4280cbe1e34c8c90a1b4e8e28f6
-      internalID: 420699627
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enano_Attack_2
-      rect:
-        serializedVersion: 2
-        x: 222
-        y: 21
-        width: 46
-        height: 60
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 068ff6f0bfe4e9f4c8bd20ec08b338b1
-      internalID: -1595268297
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enano_Attack_3
-      rect:
-        serializedVersion: 2
-        x: 305
-        y: 21
-        width: 56
-        height: 62
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9e2fc9a6fc477324c942e809e02af41d
-      internalID: -196516872
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enano_Attack_4
-      rect:
-        serializedVersion: 2
-        x: 405
-        y: 21
-        width: 55
-        height: 62
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 25b1c61a708d648489786fb193b47f7e
-      internalID: -1929164124
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enano_Attack_5
-      rect:
-        serializedVersion: 2
-        x: 510
-        y: 21
+        x: 2
+        y: 8
         width: 50
-        height: 68
+        height: 61
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d39a2bcd8ae5cea43b28ffa7e59fdf6b
-      internalID: -628101208
+      spriteID: 85781c29ef2a38149aa0c2a614039bee
+      internalID: -225833478
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enano_Attack_6
+      name: Enano_Jump_1
       rect:
         serializedVersion: 2
-        x: 622
-        y: 21
-        width: 46
-        height: 61
+        x: 87
+        y: 10
+        width: 39
+        height: 62
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: af49ed19dfb0c1d4181c0ec6f45f74e3
-      internalID: 238721877
+      spriteID: 8c17fd581588eb942af7f366802a2e3f
+      internalID: 1545202131
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enano_Attack_7
+      name: Enano_Jump_2
       rect:
         serializedVersion: 2
-        x: 720
-        y: 21
-        width: 45
-        height: 61
+        x: 165
+        y: 12
+        width: 43
+        height: 62
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b244f061bb4969143bc93d10455af114
-      internalID: 1849866655
+      spriteID: 6b1f06f2fa344374e8dced3f43945195
+      internalID: -1824924541
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enano_Attack_8
+      name: Enano_Jump_3
       rect:
         serializedVersion: 2
-        x: 820
-        y: 21
-        width: 61
+        x: 241
+        y: 11
+        width: 38
         height: 61
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f4ca5142e48062448aa9295c3129d19c
-      internalID: 391257054
+      spriteID: 1780ca06c5634864e8c32f27e14cc2d6
+      internalID: 336467737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enano_Jump_4
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 9
+        width: 39
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3076a4522a749d8448e13337b251263f
+      internalID: -514495190
       vertices: []
       indices: 
       edges: []
@@ -309,16 +225,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Enano_Attack_0: 634418337
-      Enano_Attack_1: 420699627
-      Enano_Attack_2: -1595268297
-      Enano_Attack_3: -196516872
-      Enano_Attack_4: -1929164124
-      Enano_Attack_5: -628101208
-      Enano_Attack_6: 238721877
-      Enano_Attack_7: 1849866655
-      Enano_Attack_8: 391257054
-      Enano_Attack_9: -537547614
+      Enano_Jump_0: -225833478
+      Enano_Jump_1: 1545202131
+      Enano_Jump_2: -1824924541
+      Enano_Jump_3: 336467737
+      Enano_Jump_4: -514495190
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

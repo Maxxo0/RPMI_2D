@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -17,6 +18,8 @@ public class PlayerController : MonoBehaviour
     [Header("Move Stats")]
     public float speed;
     public float jumpForce;
+    public bool cMoon;
+    public bool isGrounded;
 
 
 
@@ -28,12 +31,14 @@ public class PlayerController : MonoBehaviour
         playerInput = GetComponent<PlayerInput>();
         playerSprite = GetComponent<SpriteRenderer>();
         playerAnimator = GetComponent<Animator>();
+        cMoon = false;
     }
 
     // Update is called once per frame
     void Update()
     {
         moveInput = playerInput.actions["Move"].ReadValue<Vector2>();
+        if (isGrounded == true ) { playerAnimator.SetBool("Jump", false); }
     }
 
     private void FixedUpdate()
@@ -61,28 +66,55 @@ public class PlayerController : MonoBehaviour
     }
 
 
-
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Ground")) { isGrounded = true; }
+    }
 
     public void Jump(InputAction.CallbackContext context)
     {
+        if (isGrounded == true) 
+        {
+            
+            if (rb.gravityScale > 0) 
+            { 
+                rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse); 
+                isGrounded = false;
+                playerAnimator.SetBool("Jump", true); 
+            }
+            else if (rb.gravityScale < 0) 
+            { 
+                rb.AddForce(Vector2.down * jumpForce, ForceMode2D.Impulse);
+                isGrounded = false;
+                playerAnimator.SetBool("Jump", true); 
+            }
+            
 
+        }
         
-        if (rb.gravityScale > 0) { rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse); }
-        if (rb.gravityScale < 0) { rb.AddForce(Vector2.down * jumpForce, ForceMode2D.Impulse); }
+
 
     }
 
-
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Buttom"))
+        {
+            cMoon = true;
+        }
+    }
 
 
     public void CMoon(InputAction.CallbackContext context)
     {
-        rb.gravityScale = -1;
-       
-        playerSprite.flipY = true;
+        if (cMoon == true)
+        {
+            rb.gravityScale = -1;
+            playerSprite.flipY = true;
+        }
     }
 
     
 
-
+    
 }
