@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
     Vector2 moveInput;
     SpriteRenderer playerSprite;
     Animator playerAnimator;
+    [SerializeField] GameObject groundCheck;
 
     [Header("Move Stats")]
     public float speed;
@@ -39,6 +40,7 @@ public class PlayerController : MonoBehaviour
     {
         moveInput = playerInput.actions["Move"].ReadValue<Vector2>();
         if (isGrounded == true ) { playerAnimator.SetBool("Jump", false); }
+        
 
     }
 
@@ -67,10 +69,7 @@ public class PlayerController : MonoBehaviour
     }
 
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Ground")) { isGrounded = true; }
-    }
+ 
 
     public void Jump(InputAction.CallbackContext context)
     {
