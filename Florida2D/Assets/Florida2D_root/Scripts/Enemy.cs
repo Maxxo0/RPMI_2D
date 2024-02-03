@@ -1,13 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour
 {
 
     [Header("Enemy Stats")]
     public int damage;
-    
+    public int takeDamage;
+
+    [SerializeField] Image hpEnemy;
+    public float enemyHealth;
+    public float enemyMaxHealth;
 
 
     // Start is called before the first frame update
@@ -19,7 +24,9 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (enemyHealth <= 0) { enemyHealth = 0; }
+        hpEnemy.fillAmount = enemyHealth / enemyMaxHealth;
+        if (enemyHealth <= 0) { gameObject.SetActive(false); }
     }
 
 
@@ -45,6 +52,13 @@ public class Enemy : MonoBehaviour
         
     }
 
-    
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Attack"))
+        {
+            enemyHealth -= takeDamage;
+            collision.gameObject.SetActive(false);
+        }
+    }
 
 }

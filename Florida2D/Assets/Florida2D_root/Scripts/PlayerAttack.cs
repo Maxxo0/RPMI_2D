@@ -6,7 +6,11 @@ using UnityEngine.InputSystem;
 public class PlayerAttack : MonoBehaviour
 {
     [Header("Attack Stats")]
-    
+    public float attackCD;
+    public float attackNormal;
+
+
+
     [SerializeField] GameObject attackCol;
 
 
@@ -14,20 +18,32 @@ public class PlayerAttack : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        attackNormal = 1f;
         attackCol.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (attackCD >0) { attackCD -= Time.deltaTime; }
     }
 
    
-    public void Attack(InputAction.CallbackContext context)
+    public void AttackOn(InputAction.CallbackContext context)
     {
-        attackCol.SetActive(true);
+
+        if (context.started && attackCD <= 0) 
+        { 
+            
+            attackCol.gameObject.SetActive(true);
+            attackCD = attackNormal;
+            
+        
+        }
+
     }
+
+
+    
 
 }

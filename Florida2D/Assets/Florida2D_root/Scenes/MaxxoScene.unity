@@ -318,6 +318,7 @@ GameObject:
   - component: {fileID: 696095900}
   - component: {fileID: 696095897}
   - component: {fileID: 696095899}
+  - component: {fileID: 696095901}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -333,7 +334,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 696095889}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -1.59, z: 0}
   m_LocalScale: {x: 2.2252119, y: 2.2252119, z: 2.2252119}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -482,7 +483,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 696095900}
         m_TargetAssemblyTypeName: PlayerAttack, Assembly-CSharp
-        m_MethodName: Attack
+        m_MethodName: AttackOn
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -555,7 +556,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1349009591, guid: 482c28bf627bb384eadc4542b7d7a54a, type: 3}
+  m_Sprite: {fileID: -1753318526, guid: 771338415331b9b44a39944b11ec1785, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -578,7 +579,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 447d63d21acae4b4590d5a69f19059cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attackCD: 0
+  attackNormal: 1
   attackCol: {fileID: 789204422}
+--- !u!95 &696095901
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 696095889}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 97a8b1de8a6f14444874d4707a833f95, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &774315750
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -727,10 +751,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 789204422}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c4314cf6bd223674b8673e64d978f16d, type: 3}
+  m_Script: {fileID: 11500000, guid: 7656143a93ecf5543b9140dc4288b31c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerDamage: 50
+  attackTime: 0
+  attackTimeReset: 0
 --- !u!1 &1152932109
 GameObject:
   m_ObjectHideFlags: 0
@@ -1084,7 +1109,6 @@ GameObject:
   - component: {fileID: 1838511425}
   - component: {fileID: 1838511429}
   - component: {fileID: 1838511426}
-  - component: {fileID: 1838511430}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -1150,6 +1174,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 25
+  takeDamage: 50
+  hpEnemy: {fileID: 628050703}
+  enemyHealth: 100
+  enemyMaxHealth: 100
 --- !u!212 &1838511427
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1245,21 +1273,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &1838511430
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1838511424}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 57676ca4192aacc4698877f98e4f4d8c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hpEnemy: {fileID: 628050703}
-  enemyHealth: 100
-  enemyMaxHealth: 100
 --- !u!1 &2005518572
 GameObject:
   m_ObjectHideFlags: 0

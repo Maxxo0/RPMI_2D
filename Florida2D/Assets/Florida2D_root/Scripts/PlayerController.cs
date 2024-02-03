@@ -12,7 +12,7 @@ public class PlayerController : MonoBehaviour
     PlayerInput playerInput;
     Vector2 moveInput;
     SpriteRenderer playerSprite;
-
+    Animator playerAnimator;
 
     [Header("Move Stats")]
     public float speed;
@@ -27,6 +27,7 @@ public class PlayerController : MonoBehaviour
         playerCol = GetComponent<CapsuleCollider2D>();
         playerInput = GetComponent<PlayerInput>();
         playerSprite = GetComponent<SpriteRenderer>();
+        playerAnimator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -43,9 +44,20 @@ public class PlayerController : MonoBehaviour
     void Move()
     {
         rb.velocity = new Vector3(moveInput.x * speed, rb.velocity.y, 0);
-
-        if (moveInput.x > 0) { transform.rotation = Quaternion.Euler(0, 0, 0); }
-        else if (moveInput.x < 0) { transform.rotation = Quaternion.Euler(0, 180, 0); }
+        if (moveInput.x > 0) 
+        { 
+            transform.rotation = Quaternion.Euler(0, 0, 0);
+            playerAnimator.SetBool("Run", true);
+        }
+        else if (moveInput.x < 0) 
+        { 
+            transform.rotation = Quaternion.Euler(0, 180, 0);
+            playerAnimator.SetBool("Run", true);
+        }
+        else 
+        {
+            playerAnimator.SetBool("Run", false);
+        }
     }
 
 
