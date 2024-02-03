@@ -8,6 +8,8 @@ TagManager:
   - Attack
   - Ground
   - Buttom
+  - PickUp
+  - Drop
   layers:
   - Default
   - TransparentFX
