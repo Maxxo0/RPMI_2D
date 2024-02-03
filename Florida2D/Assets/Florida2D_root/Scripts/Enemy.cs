@@ -11,6 +11,7 @@ public class Enemy : MonoBehaviour
     public int takeDamage;
 
     [SerializeField] Image hpEnemy;
+    [SerializeField] Canvas canvasEnemy;
     public float enemyHealth;
     public float enemyMaxHealth;
 
@@ -56,6 +57,7 @@ public class Enemy : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Attack"))
         {
+            canvasEnemy.gameObject.SetActive(true);
             enemyHealth -= takeDamage;
             collision.gameObject.SetActive(false);
         }

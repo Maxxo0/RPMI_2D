@@ -39,6 +39,7 @@ public class PlayerController : MonoBehaviour
     {
         moveInput = playerInput.actions["Move"].ReadValue<Vector2>();
         if (isGrounded == true ) { playerAnimator.SetBool("Jump", false); }
+
     }
 
     private void FixedUpdate()
