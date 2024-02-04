@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b5cfe13f9e25aca4f96f025857000008
+guid: dc47ace509d1b3e4a85dfd67a31fd8a2
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -106,59 +106,30 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Enano_Jump_0
+      name: escarabajosprint_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 8
-        width: 50
-        height: 61
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 85781c29ef2a38149aa0c2a614039bee
-      internalID: -225833478
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enano_Jump_1
-      rect:
-        serializedVersion: 2
-        x: 87
-        y: 10
-        width: 39
-        height: 62
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8c17fd581588eb942af7f366802a2e3f
-      internalID: 1545202131
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enano_Jump_2
-      rect:
-        serializedVersion: 2
-        x: 165
+        x: 4
         y: 12
-        width: 43
-        height: 62
+        width: 80
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,20 +137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6b1f06f2fa344374e8dced3f43945195
-      internalID: -1824924541
+      spriteID: 158eaedcd28e33a438a1139fba4fb657
+      internalID: -52138500
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enano_Jump_3
+      name: escarabajosprint_1
       rect:
         serializedVersion: 2
-        x: 241
-        y: 11
-        width: 38
-        height: 61
+        x: 102
+        y: 12
+        width: 82
+        height: 33
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,20 +158,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1780ca06c5634864e8c32f27e14cc2d6
-      internalID: 336467737
+      spriteID: e4a9ca52af530ad4c8c5eff40c487ab2
+      internalID: 1426823440
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enano_Jump_4
+      name: escarabajosprint_2
       rect:
         serializedVersion: 2
-        x: 315
-        y: 9
-        width: 39
-        height: 60
+        x: 201
+        y: 12
+        width: 83
+        height: 33
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,8 +179,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3076a4522a749d8448e13337b251263f
-      internalID: -514495190
+      spriteID: dccda937f40086148804b5164f67f4e1
+      internalID: -1341295526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escarabajosprint_3
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 12
+        width: 84
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce47d50ead7edb54b955d9668be91133
+      internalID: -1993088823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escarabajosprint_4
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 12
+        width: 78
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a25f2094f01542a43966367ca595b614
+      internalID: -1482459960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escarabajosprint_5
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 12
+        width: 82
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 812c70bf5eda8f8408e270334757b1eb
+      internalID: -1234609391
       vertices: []
       indices: 
       edges: []
@@ -225,11 +259,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Enano_Jump_0: -225833478
-      Enano_Jump_1: 1545202131
-      Enano_Jump_2: -1824924541
-      Enano_Jump_3: 336467737
-      Enano_Jump_4: -514495190
+      escarabajosprint_0: -52138500
+      escarabajosprint_1: 1426823440
+      escarabajosprint_2: -1341295526
+      escarabajosprint_3: -1993088823
+      escarabajosprint_4: -1482459960
+      escarabajosprint_5: -1234609391
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
