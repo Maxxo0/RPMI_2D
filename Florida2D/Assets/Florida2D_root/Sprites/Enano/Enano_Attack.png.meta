@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f946908da761af646a4b0b0f84167023
+guid: 8ca26861047857c49af8ddf8f8e4da10
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -106,113 +106,16 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: jumpplayer_0
+      name: Enano_Attack_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 8
-        width: 50
-        height: 61
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1070e4144a8540f49a40f3173105ae54
-      internalID: 1238906911
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jumpplayer_1
-      rect:
-        serializedVersion: 2
-        x: 87
-        y: 10
-        width: 39
-        height: 62
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5fdeca20564ba4145baebcc2d05fc94a
-      internalID: 849349616
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jumpplayer_2
-      rect:
-        serializedVersion: 2
-        x: 165
-        y: 12
-        width: 43
-        height: 62
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 40ea5b0443988ee47b9987d17599b94d
-      internalID: 1647205020
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jumpplayer_3
-      rect:
-        serializedVersion: 2
-        x: 241
-        y: 11
-        width: 38
-        height: 61
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 96dedc050fffed446be27ce7ce4418a0
-      internalID: 635289735
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jumpplayer_4
-      rect:
-        serializedVersion: 2
-        x: 315
-        y: 9
-        width: 39
+        x: 20
+        y: 21
+        width: 42
         height: 60
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -221,8 +124,197 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c329781de7a7c544a90e13e662ad5af3
-      internalID: -1163736266
+      spriteID: 1e7cc9e3a4ee4794aabc6972880c1c87
+      internalID: -1234642667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enano_Attack_1
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 21
+        width: 42
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08bd75addeed4f84abdbbf95f38ce6da
+      internalID: 919432872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enano_Attack_2
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 21
+        width: 46
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebae2e400fbc80a48b2859f1618f7275
+      internalID: 1542390456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enano_Attack_3
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 21
+        width: 56
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fb52a4bec629fe44966962cf2518211
+      internalID: -623031835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enano_Attack_4
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 21
+        width: 55
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c267bf0e1f6eac40ac2b034fc49dbc3
+      internalID: -563825886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enano_Attack_5
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 21
+        width: 50
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88c5ac3ffb0edf44383b1ab2d0a498e5
+      internalID: 1195056709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enano_Attack_6
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 21
+        width: 46
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a58d089a16f99743bf397a4e959f603
+      internalID: -433623831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enano_Attack_7
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 21
+        width: 45
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db2d7be5e67bcee4f942e641464b7415
+      internalID: -2146158752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enano_Attack_8
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 21
+        width: 42
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc840503b0de94b468c2475e52efe7db
+      internalID: 975989292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enano_Attack_9
+      rect:
+        serializedVersion: 2
+        x: 869
+        y: 32
+        width: 12
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf2bd44467c78894eb518195b6d5c07f
+      internalID: 1024224311
       vertices: []
       indices: 
       edges: []
@@ -238,11 +330,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      jumpplayer_0: 1238906911
-      jumpplayer_1: 849349616
-      jumpplayer_2: 1647205020
-      jumpplayer_3: 635289735
-      jumpplayer_4: -1163736266
+      Enano_Attack_0: -1234642667
+      Enano_Attack_1: 919432872
+      Enano_Attack_2: 1542390456
+      Enano_Attack_3: -623031835
+      Enano_Attack_4: -563825886
+      Enano_Attack_5: 1195056709
+      Enano_Attack_6: -433623831
+      Enano_Attack_7: -2146158752
+      Enano_Attack_8: 975989292
+      Enano_Attack_9: 1024224311
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
