@@ -3,7 +3,16 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Enemy
+  - Attack
+  - Ground
+  - Buttom
+  - PickUp
+  - Drop
+  - PointA
+  - PointB
+  - Speedboost
   layers:
   - Default
   - TransparentFX
