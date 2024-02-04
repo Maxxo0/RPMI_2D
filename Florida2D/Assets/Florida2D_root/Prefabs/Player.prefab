@@ -106,6 +106,7 @@ GameObject:
   - component: {fileID: 1670264804597200462}
   - component: {fileID: 7333740872502752242}
   - component: {fileID: 1733507274558394261}
+  - component: {fileID: 7970599280814870260}
   - component: {fileID: 3510245898198565898}
   - component: {fileID: 3458359094525837604}
   - component: {fileID: 6207664436912561952}
@@ -123,7 +124,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7574160812766423979}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -1.59, z: 0}
   m_LocalScale: {x: 2.2252119, y: 2.2252119, z: 2.2252119}
   m_ConstrainProportionsScale: 0
@@ -240,6 +241,23 @@ MonoBehaviour:
   attackCD: 0
   attackNormal: 1
   attackCol: {fileID: 6953882201181265342}
+--- !u!114 &7970599280814870260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7574160812766423979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff94306842719cb46bbaadb657754998, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controlMenu: {fileID: 0}
+  winMenu: {fileID: 0}
+  pickUps: {fileID: 0}
+  actuallyPoints: 0
+  maxPoints: 6
 --- !u!114 &3510245898198565898
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -317,6 +335,22 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 68732f9f-7825-462c-8bc2-ee460bf4702a
     m_ActionName: Gameplay/Attack[/Keyboard/q]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7970599280814870260}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: Controls
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: b82cef1f-ae6e-44ed-ac84-86f02666388e
+    m_ActionName: Gameplay/Menu[/Keyboard/escape]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Gameplay
