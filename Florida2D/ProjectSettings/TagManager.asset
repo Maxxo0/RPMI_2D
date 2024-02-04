@@ -10,6 +10,8 @@ TagManager:
   - Buttom
   - PickUp
   - Drop
+  - PointA
+  - PointB
   layers:
   - Default
   - TransparentFX

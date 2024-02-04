@@ -77,25 +77,25 @@ public class BeetlEnemy : MonoBehaviour
             HealthSystem hpSystem = collision.gameObject.GetComponent<HealthSystem>();
             hpSystem.TakeDamage(damage);
         }
-       if (collision.gameObject.CompareTag("Player"))
+      /* if (collision.gameObject.CompareTag("Player"))
 
         {
             distance = Vector2.Distance(transform.position, Player.transform.position);
 
             transform.position = Vector2.MoveTowards(this.transform.position, Player.transform.position, speedboost * Time.deltaTime);
-        }
+        }*/
     }
 
   
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Point1"))
+        if (collision.gameObject.CompareTag("PointA"))
         {
             transform.rotation = Quaternion.Euler(0, 0, 0);
 
         }
-        else if (collision.gameObject.CompareTag("Point2"))
+        else if (collision.gameObject.CompareTag("PointB"))
         {
             transform.rotation = Quaternion.Euler(0, 180, 0);
         }
