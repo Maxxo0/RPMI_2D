@@ -18,7 +18,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3067517381519513324
 RectTransform:
   m_ObjectHideFlags: 0
@@ -279,6 +279,7 @@ MonoBehaviour:
   damage: 25
   takeDamage: 50
   hpEnemy: {fileID: 8051379465317506708}
+  canvasEnemy: {fileID: 7839559948144063639}
   enemyHealth: 100
   enemyMaxHealth: 100
 --- !u!1 &3775725908745902870
