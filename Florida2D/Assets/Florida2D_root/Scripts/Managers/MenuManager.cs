@@ -8,7 +8,7 @@ public class MenuManager : MonoBehaviour
     [SerializeField] GameObject controlMenu;
     [SerializeField] GameObject levelMenu;
     
-    public int level = 1;
+    public int level = 0;
 
 
     // Start is called before the first frame update
@@ -16,7 +16,7 @@ public class MenuManager : MonoBehaviour
     {
         Time.timeScale = 0f;
         Cursor.lockState = CursorLockMode.None;
-        level = 1;
+        level = 0;
     }
 
     // Update is called once per frame
@@ -60,21 +60,37 @@ public class MenuManager : MonoBehaviour
 
     public void Level1()
     {
-        SceneManager.LoadScene(1); // Cargar escena 1
+        if (level == 0)
+        {
+            level = 1;
+            SceneManager.LoadScene(1); // Cargar escena 1
+        }
     }
 
     public void Level2()
     {
-        SceneManager.LoadScene(2); // Cargar escena 2
+        if(level == 1)
+        {
+            level = 2;
+            SceneManager.LoadScene(2); // Cargar escena 2
+        }
     }
 
     public void Level3()
     {
-        SceneManager.LoadScene(3); // Cargar escena 3
+        if(level == 2)
+        {
+            level = 3;
+            SceneManager.LoadScene(3); // Cargar escena 3
+        }
     }
 
     public void Level4()
     {
-        SceneManager.LoadScene(4); // Cargar escena 1
+        if(level==4)
+        {
+            level = 4;
+            SceneManager.LoadScene(4); // Cargar escena 1
+        }
     }
 }
