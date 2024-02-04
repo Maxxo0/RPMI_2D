@@ -10,7 +10,8 @@ TagManager:
   - Buttom
   - PickUp
   - Drop
-  - GroundConf
+  - PointA
+  - PointB
   - Nave
   layers:
   - Default
