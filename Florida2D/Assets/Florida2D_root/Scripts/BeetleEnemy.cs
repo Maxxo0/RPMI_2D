@@ -95,11 +95,11 @@ public class BeetlEnemy : MonoBehaviour
             transform.rotation = Quaternion.Euler(0, 0, 0);
 
         }
-        else if (collision.gameObject.CompareTag("PointB"))
+         else if (collision.gameObject.CompareTag("PointB"))
         {
             transform.rotation = Quaternion.Euler(0, 180, 0);
         }
-       else  if (collision.gameObject.CompareTag("Attack"))
+       if (collision.gameObject.CompareTag("Attack"))
         {
             canvasEnemy.gameObject.SetActive(true);
             enemyHealth -= takeDamage;
