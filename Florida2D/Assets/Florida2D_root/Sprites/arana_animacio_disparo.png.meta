@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ce49e0c55f08c124b860c4c235d0502e
+guid: f99f0447b841bb941b37632c38cdd73a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -137,8 +137,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9b1d383af849a5447b9efe994126fef5
-      internalID: 2104492613
+      spriteID: e71571a0ee5d5f74189f6d66e1ce5eb4
+      internalID: 240203979
       vertices: []
       indices: 
       edges: []
@@ -158,8 +158,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e52db452e25e189428af1359c687762b
-      internalID: 610543022
+      spriteID: 5e7dcd0d5efc3cd42a084b89bf2e2e56
+      internalID: -1208585307
       vertices: []
       indices: 
       edges: []
@@ -179,8 +179,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8e46a6e985d459e4c8b4b307ac2489eb
-      internalID: -1006800410
+      spriteID: 06fd77ebf4456fb4bb7fd269d58d43b5
+      internalID: 1813230501
       vertices: []
       indices: 
       edges: []
@@ -196,9 +196,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      arana_animacio_disparo_0: 2104492613
-      arana_animacio_disparo_1: 610543022
-      arana_animacio_disparo_2: -1006800410
+      arana_animacio_disparo_0: 240203979
+      arana_animacio_disparo_1: -1208585307
+      arana_animacio_disparo_2: 1813230501
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
