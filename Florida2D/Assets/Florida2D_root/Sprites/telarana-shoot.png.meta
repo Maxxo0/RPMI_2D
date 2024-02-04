@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8e99108971932e340aef07e792bd353c
+guid: 5ddd5094bd029014cb270ca46c473d96
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,13 +123,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: walkescarabajo_0
+      name: telarana-shoot_0
       rect:
         serializedVersion: 2
-        x: 9
-        y: 12
-        width: 72
-        height: 42
+        x: 3
+        y: 3
+        width: 11
+        height: 9
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,50 +137,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 41583b1dddfbc694ea37fba9fc700562
-      internalID: 877614432
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walkescarabajo_1
-      rect:
-        serializedVersion: 2
-        x: 108
-        y: 12
-        width: 71
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e3abf0db45fc3a24388842529082426d
-      internalID: -825444804
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walkescarabajo_2
-      rect:
-        serializedVersion: 2
-        x: 207
-        y: 12
-        width: 73
-        height: 41
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3609d8e52636de4468d4711b894524a6
-      internalID: -2061476253
+      spriteID: 3c12aa22be8f6164ab49050e2facde64
+      internalID: 1446473628
       vertices: []
       indices: 
       edges: []
@@ -196,9 +154,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      walkescarabajo_0: 877614432
-      walkescarabajo_1: -825444804
-      walkescarabajo_2: -2061476253
+      telarana-shoot_0: 1446473628
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

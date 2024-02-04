@@ -8,6 +8,7 @@ public class PlayerAttack : MonoBehaviour
     [Header("Attack Stats")]
     public float attackCD;
     public float attackNormal;
+ 
     [SerializeField] GameObject attackCol;
     Animator playerAnimator;
 

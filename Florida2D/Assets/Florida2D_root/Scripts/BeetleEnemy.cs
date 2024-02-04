@@ -8,11 +8,14 @@ public class BeetlEnemy : MonoBehaviour
 
     // Start is called before the first frame update
     private float distance;
-    public float speed; //Velocidad de la plataforma
-    Rigidbody2D rb;
+    public float speed; //Velocidad 
+  
+    Rigidbody2D rb; // maybe
     public GameObject Player;
     Animator EnemyAnimator;
-    [SerializeField] float speedboost;
+    
+
+
     [SerializeField] int startingPoint; //Numero para determinar la posicion 
     [SerializeField] Transform[] points; // array de puntos que la plataforma va a perseguir
     
@@ -51,9 +54,10 @@ public class BeetlEnemy : MonoBehaviour
         if (enemyHealth <= 0) { enemyHealth = 0; }
         hpEnemy.fillAmount = enemyHealth / enemyMaxHealth;
         if (enemyHealth <= 0) { gameObject.SetActive(false); }
+      
     }
 
-
+   
 
     void BeetleMove()
 
@@ -69,6 +73,12 @@ public class BeetlEnemy : MonoBehaviour
         }
 
         transform.position = Vector2.MoveTowards(transform.position, points[i].position, speed * Time.deltaTime);
+        /*
+        transform.rotation = Quaternion.Euler(0, 180, 0);
+        distance = Vector2.Distance(transform.position, Player.transform.position) ;
+        transform.position = Vector2.MoveTowards(this.transform.position, points[i].position, speedboost * Time.deltaTime);*/
+       
+
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -77,13 +87,16 @@ public class BeetlEnemy : MonoBehaviour
             HealthSystem hpSystem = collision.gameObject.GetComponent<HealthSystem>();
             hpSystem.TakeDamage(damage);
         }
-      /* if (collision.gameObject.CompareTag("Player"))
+       
+        /*
+       if (collision.gameObject.CompareTag("Player"))
 
         {
             distance = Vector2.Distance(transform.position, Player.transform.position);
 
             transform.position = Vector2.MoveTowards(this.transform.position, Player.transform.position, speedboost * Time.deltaTime);
-        }*/
+        }
+        */
     }
 
   
@@ -105,7 +118,9 @@ public class BeetlEnemy : MonoBehaviour
             enemyHealth -= takeDamage;
             collision.gameObject.SetActive(false);
         }
+      
     }
+    
 
 
 }

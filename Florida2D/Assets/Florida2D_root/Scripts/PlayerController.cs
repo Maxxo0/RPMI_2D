@@ -9,7 +9,8 @@ public class PlayerController : MonoBehaviour
 
     [Header("References")]
     Rigidbody2D rb;
-    CapsuleCollider2D playerCol;
+    CapsuleCollider2D playerCol; 
+ 
     PlayerInput playerInput;
     Vector2 moveInput;
     SpriteRenderer playerSprite;
