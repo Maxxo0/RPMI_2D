@@ -78,22 +78,21 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void ExitControls()
+    public void ExitControls(InputAction.CallbackContext context)
     {
         controlMenu.SetActive(false);
         Time.timeScale = 1f;
         Cursor.lockState = CursorLockMode.Locked;
     }
 
+
+
     private void CanExit()
     {
         ship.gameObject.SetActive(true);
     }
 
-    private void LvlUnlock()
-    {
-        
-    }
+   
 } 
 
 

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -12,7 +13,8 @@ public class PlayerController : MonoBehaviour
     CapsuleCollider2D playerCol;
     [SerializeField] LayerMask groundLayer;
     [SerializeField] Transform groundCheck;
-    [SerializeField] Transform groundCheck2;
+    
+    
 
     PlayerInput playerInput;
     Vector2 moveInput;
@@ -25,8 +27,8 @@ public class PlayerController : MonoBehaviour
     public float jumpForce;
     public bool cMoon;
     public float mx;
+
     
-   
 
 
 
@@ -39,14 +41,15 @@ public class PlayerController : MonoBehaviour
        playerSprite = GetComponent<SpriteRenderer>();
        playerAnimator = GetComponent<Animator>();
        cMoon = false;
+       
        mx = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
+
         moveInput = playerInput.actions["Move"].ReadValue<Vector2>();
-        
         
 
     }
@@ -108,8 +111,8 @@ public class PlayerController : MonoBehaviour
     }
 
 
+    
 
-   
 
 
     private void OnTriggerEnter2D(Collider2D collision)

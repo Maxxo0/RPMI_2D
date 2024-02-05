@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4403137989050970214
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8000323003589659501}
+  m_Layer: 0
+  m_Name: GroundCheck
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8000323003589659501
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4403137989050970214}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.3, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2588289518362666519}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6953882201181265342
 GameObject:
   m_ObjectHideFlags: 0
@@ -130,8 +161,9 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4315609101000743479}
+  - {fileID: 8000323003589659501}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!70 &6810243785360932583
 CapsuleCollider2D:
@@ -207,10 +239,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7405f8a468b7ab64d82ef1d4434e89a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 8
+  groundCheck: {fileID: 8000323003589659501}
   speed: 5
-  jumpForce: 5
+  jumpForce: 6.5
   cMoon: 0
-  isGrounded: 0
+  mx: 0
 --- !u!114 &7333740872502752242
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -256,6 +292,8 @@ MonoBehaviour:
   controlMenu: {fileID: 0}
   winMenu: {fileID: 0}
   pickUps: {fileID: 0}
+  ship: {fileID: 656063055083033821, guid: df812d77a70b9214bba36e172d33d7c1, type: 3}
+  menuManager: {fileID: 0}
   actuallyPoints: 0
   maxPoints: 6
 --- !u!114 &3510245898198565898
@@ -351,8 +389,24 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: b82cef1f-ae6e-44ed-ac84-86f02666388e
     m_ActionName: Gameplay/Menu[/Keyboard/escape]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7970599280814870260}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: ExitControls
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 6d2e0d01-555e-4ce9-984b-bfa70cd57aee
+    m_ActionName: Gameplay/Exit[/XInputControllerWindows/select,/XInputControllerWindows/buttonEast]
   m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
+  m_DefaultControlScheme: Keyboard
   m_DefaultActionMap: Gameplay
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
