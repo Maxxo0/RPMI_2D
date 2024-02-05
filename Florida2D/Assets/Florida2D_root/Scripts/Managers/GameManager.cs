@@ -85,6 +85,11 @@ public class GameManager : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
     }
 
+    public void ExitControls()
+    {
+        controlMenu.SetActive(false);
+        Time.timeScale = 0f;
+    }
 
 
     private void CanExit()
