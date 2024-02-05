@@ -26,6 +26,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         pickUps.text = actuallyPoints.ToString() + "/" + maxPoints.ToString();
         if (actuallyPoints >= maxPoints ) { actuallyPoints = maxPoints; }
         if (actuallyPoints == maxPoints) { CanExit(); }
@@ -77,7 +78,7 @@ public class GameManager : MonoBehaviour
             Cursor.lockState = CursorLockMode.None;
         }
     }
-
+   
     public void ExitControls(InputAction.CallbackContext context)
     {
         controlMenu.SetActive(false);
@@ -85,12 +86,12 @@ public class GameManager : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
     }
 
-    public void ExitControls()
+    public void Exit()
     {
         controlMenu.SetActive(false);
-        Time.timeScale = 0f;
+        Time.timeScale = 1f;
+        Cursor.lockState = CursorLockMode.Locked;
     }
-
 
     private void CanExit()
     {
