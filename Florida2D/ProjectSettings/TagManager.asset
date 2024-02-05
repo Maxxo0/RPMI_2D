@@ -14,6 +14,7 @@ TagManager:
   - PointB
   - Speedboost
   - Nave
+  - Lava
   layers:
   - Default
   - TransparentFX
