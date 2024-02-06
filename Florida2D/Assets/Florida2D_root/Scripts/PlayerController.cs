@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour
     CapsuleCollider2D playerCol;
     [SerializeField] LayerMask groundLayer;
     [SerializeField] Transform groundCheck;
+    [SerializeField] AudioManager audioManager;
     
     
 
@@ -20,6 +21,7 @@ public class PlayerController : MonoBehaviour
     Vector2 moveInput;
     SpriteRenderer playerSprite;
     Animator playerAnimator;
+    
     
 
     [Header("Move Stats")]
@@ -36,6 +38,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
        Time.timeScale = 1f;
+       audioManager = FindObjectOfType<AudioManager>();
        rb = GetComponent<Rigidbody2D>();
        playerCol = GetComponent<CapsuleCollider2D>();
        playerInput = GetComponent<PlayerInput>();
@@ -43,6 +46,7 @@ public class PlayerController : MonoBehaviour
        playerAnimator = GetComponent<Animator>();
        cMoon = false;
        
+
        mx = 0;
     }
 
@@ -137,6 +141,7 @@ public class PlayerController : MonoBehaviour
     {
         if (cMoon == true)
         {
+            audioManager.SelectSFX(0);
             rb.gravityScale = -1;
             transform.rotation = Quaternion.Euler(180, 0, 0);
             mx = 180;

@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] TMP_Text pickUps;
     [SerializeField] GameObject ship;
     [SerializeField] GameObject menuManager;
+    
     public int actuallyPoints;
     public int maxPoints;
 
@@ -19,6 +20,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         Time.timeScale = 1f;
+        
         Cursor.lockState = CursorLockMode.Locked;
         actuallyPoints = 0;
     }
