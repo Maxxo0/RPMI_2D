@@ -7,7 +7,7 @@ using UnityEngine;
 public class AudioManager : MonoBehaviour
 {
 
-    [SerializeField] private AudioClip[] music, sfx;
+    [SerializeField] private AudioClip[] music;
 
 
     AudioSource audioManager;
@@ -31,14 +31,9 @@ public class AudioManager : MonoBehaviour
 
 
         audioManager.PlayOneShot(music[indice]);
+        
 
     }
 
-    public void SelectSFX(int indice2)
-    {
 
-
-        audioManager.PlayOneShot(music[indice2]);
-
-    }
 }

@@ -14,6 +14,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] LayerMask groundLayer;
     [SerializeField] Transform groundCheck;
     [SerializeField] AudioManager audioManager;
+    [SerializeField] AudioClip cmoonEffect;
+    AudioSource audioSource;
     
     
 
@@ -44,6 +46,7 @@ public class PlayerController : MonoBehaviour
        playerInput = GetComponent<PlayerInput>();
        playerSprite = GetComponent<SpriteRenderer>();
        playerAnimator = GetComponent<Animator>();
+       audioSource = GetComponent<AudioSource>();
        cMoon = false;
        
 
@@ -141,11 +144,15 @@ public class PlayerController : MonoBehaviour
     {
         if (cMoon == true)
         {
-            audioManager.SelectSFX(0);
+            
             rb.gravityScale = -1;
             transform.rotation = Quaternion.Euler(180, 0, 0);
             mx = 180;
             playerAnimator.SetBool("Run", true);
+            audioSource.PlayOneShot(cmoonEffect);
+            
+            
+           
         }
     }
 

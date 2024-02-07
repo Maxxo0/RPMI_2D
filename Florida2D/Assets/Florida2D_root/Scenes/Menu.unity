@@ -1189,7 +1189,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   music:
   - {fileID: 8300000, guid: 987253137accbe04bbc4cdc1adaf1669, type: 3}
-  sfx:
   - {fileID: 8300000, guid: e0538ba3563c9184aa381c23d3693c82, type: 3}
 --- !u!1 &1212543297
 GameObject:
@@ -2757,7 +2756,7 @@ PrefabInstance:
     - target: {fileID: 99716064946547460, guid: b533fd60184bf364ea09f53e0a3b8ec7, type: 3}
       propertyPath: audioManager
       value: 
-      objectReference: {fileID: 1079779298}
+      objectReference: {fileID: 0}
     - target: {fileID: 1098457473132413822, guid: b533fd60184bf364ea09f53e0a3b8ec7, type: 3}
       propertyPath: m_Name
       value: GameManager

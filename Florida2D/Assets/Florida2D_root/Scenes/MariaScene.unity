@@ -2851,17 +2851,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 31c75bc986e3a7743967d1d52bca08ee, type: 3}
---- !u!114 &1469096298 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1733507274558394261, guid: 808d338734ba008458457549fc02abb7, type: 3}
-  m_PrefabInstance: {fileID: 1899320295}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 447d63d21acae4b4590d5a69f19059cc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1560960040 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7970599280814870260, guid: 808d338734ba008458457549fc02abb7, type: 3}
@@ -2886,6 +2875,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1670264804597200462, guid: 808d338734ba008458457549fc02abb7, type: 3}
+      propertyPath: cmoonEffect
+      value: 
+      objectReference: {fileID: 8300000, guid: e0538ba3563c9184aa381c23d3693c82, type: 3}
     - target: {fileID: 2588289518362666519, guid: 808d338734ba008458457549fc02abb7, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -2930,34 +2923,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3510245898198565898, guid: 808d338734ba008458457549fc02abb7, type: 3}
-      propertyPath: m_DefaultControlScheme
-      value: Keyboard
-      objectReference: {fileID: 0}
-    - target: {fileID: 3510245898198565898, guid: 808d338734ba008458457549fc02abb7, type: 3}
-      propertyPath: m_ActionEvents.Array.data[3].m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1469096298}
-    - target: {fileID: 3510245898198565898, guid: 808d338734ba008458457549fc02abb7, type: 3}
-      propertyPath: m_ActionEvents.Array.data[4].m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1560960040}
-    - target: {fileID: 3510245898198565898, guid: 808d338734ba008458457549fc02abb7, type: 3}
-      propertyPath: m_ActionEvents.Array.data[3].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: AttackOn
-      objectReference: {fileID: 0}
-    - target: {fileID: 3510245898198565898, guid: 808d338734ba008458457549fc02abb7, type: 3}
-      propertyPath: m_ActionEvents.Array.data[4].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Controls
-      objectReference: {fileID: 0}
-    - target: {fileID: 3510245898198565898, guid: 808d338734ba008458457549fc02abb7, type: 3}
-      propertyPath: m_ActionEvents.Array.data[3].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: PlayerAttack, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 4403137989050970214, guid: 808d338734ba008458457549fc02abb7, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7333740872502752242, guid: 808d338734ba008458457549fc02abb7, type: 3}
       propertyPath: hpBar
       value: 
@@ -2975,10 +2940,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1029193546}
     - target: {fileID: 7970599280814870260, guid: 808d338734ba008458457549fc02abb7, type: 3}
-      propertyPath: winMenu
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 7970599280814870260, guid: 808d338734ba008458457549fc02abb7, type: 3}
       propertyPath: maxPoints
       value: 3
       objectReference: {fileID: 0}
@@ -2986,12 +2947,7 @@ PrefabInstance:
       propertyPath: controlMenu
       value: 
       objectReference: {fileID: 1017388969}
-    - target: {fileID: 8717621660404895178, guid: 808d338734ba008458457549fc02abb7, type: 3}
-      propertyPath: controlMenu
-      value: 
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 8717621660404895178, guid: 808d338734ba008458457549fc02abb7, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
