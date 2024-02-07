@@ -150,6 +150,7 @@ public class PlayerController : MonoBehaviour
             mx = 180;
             playerAnimator.SetBool("Run", true);
             audioSource.PlayOneShot(cmoonEffect);
+            cMoon = false;  
             
             
            
